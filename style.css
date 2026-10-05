@@ -17,6 +17,12 @@ header {
   text-align: center;
 }
 
+header img {
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  margin-bottom: 10px;
+}
+
 header h1 {
   margin: 0;
   font-size: 2.4rem;
@@ -83,4 +89,35 @@ footer {
   text-align: center;
   padding: 20px;
   color: #55607a;
+}
+
+/* Tablets and phones */
+@media (max-width: 700px) {
+  header {
+    padding: 28px 16px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  main {
+    padding: 16px;
+  }
+
+  ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small phones */
+@media (max-width: 420px) {
+  nav {
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  section {
+    padding: 16px;
+  }
 }
